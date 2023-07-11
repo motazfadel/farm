@@ -1,0 +1,99 @@
+//
+// _layouts.scss
+//
+
+body[data-layout-size="boxed"] {
+  .container-fluid {
+    max-width: 100% !important;
+  }
+  background-color: $boxed-body-bg;
+  #layout-wrapper {
+    background-color: $body-bg;
+    max-width: $boxed-layout-width;
+    margin: 0 auto;
+    box-shadow: $box-shadow;
+    &::before {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+  }
+
+  #page-topbar {
+    max-width: $boxed-layout-width;
+    margin: 0 auto;
+  }
+
+  .topnav {
+    max-width: $boxed-layout-width;
+    margin: 60px auto 0px;
+  }
+
+  .footer {
+    margin: 0 auto;
+    max-width: calc(#{$boxed-layout-width} - #{$sidebar-width});
+  }
+
+  &.vertical-collpsed {
+    .footer {
+      max-width: calc(#{$boxed-layout-width} - #{$sidebar-collapsed-width});
+    }
+  }
+}
+
+// Horizontal Boxed Layout
+
+body[data-layout="horizontal"][data-layout-size="boxed"] {
+  .footer {
+    max-width: 1300px;
+  }
+  .container-fluid,
+  .navbar-header {
+    max-width: $boxed-layout-width;
+  }
+}
+
+//Page-title-2
+
+body[data-page-title="white"] {
+  .page-title-box {
+    background: $page-title-bg;
+    padding: 17px 20px;
+    margin-bottom: 30px;
+    box-shadow: $box-shadow;
+    .page-title {
+      font-size: 18px;
+      margin: 0;
+      color: $dark;
+      line-height: 30px;
+    }
+  }
+  .page-content-wrapper {
+    margin-top: 0px;
+  }
+}
+
+//Sidebar with User
+.user-details {
+  display: none;
+  min-height: 80px;
+  padding: 20px;
+  position: relative;
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  .dropdown-toggle {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+body[data-sidebar-user="true"] {
+  .user-details {
+    display: block;
+  }
+  &.vertical-collpsed {
+    .user-details {
+      display: none;
+    }
+  }
+}

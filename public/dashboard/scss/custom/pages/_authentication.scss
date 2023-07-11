@@ -1,0 +1,41 @@
+//
+// authentication.scss
+//
+
+//pages
+.account-pages {
+  background: url(../images/bg.jpg);
+  position: absolute;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.wrapper-page {
+  margin: 5.5% auto;
+  max-width: 460px;
+  position: relative;
+}
+
+//Lock-screen
+.user-thumb {
+  img {
+    height: 88px;
+    margin: 0 auto;
+    width: 88px;
+  }
+}
+
+
+//auth-logo
+
+.auth-logo {
+  .logo {
+    .logo-dark {
+      display: $display-block;
+    }
+    .logo-light {
+      display: $display-none;
+    }
+  }
+}

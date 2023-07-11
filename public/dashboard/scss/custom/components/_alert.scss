@@ -1,0 +1,15 @@
+// alert
+
+.alert {
+  position: relative;
+  border: 0;
+  box-shadow: $box-shadow;
+}
+
+.alert-dismissible {
+  .btn-close {
+    font-size: 9px;
+    padding: $alert-padding-y * 1.4 $alert-padding-x;
+    box-shadow: none;
+  }
+}

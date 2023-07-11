@@ -1,0 +1,35 @@
+//
+// Extras pages.scss
+//
+
+
+// directory
+
+.directory-card {
+  .directory-card-bg {
+    background: url("../images/bg-directory-pattern.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .social-icons {
+    .social-links {
+      position: absolute;
+      bottom: 20px;
+      right: 0px;
+      border-top-left-radius: 24px;
+      border-bottom-left-radius: 24px;
+      background: rgba($primary, 0.5);
+    }
+  }
+}
+
+//Error Page
+.ex-page-content {
+  h1 {
+    font-size: 98px;
+    font-weight: 500;
+    line-height: 150px;
+    text-shadow: rgba(61, 61, 61, 0.3) 1px 1px, rgba(61, 61, 61, 0.2) 2px 2px,
+      rgba(61, 61, 61, 0.3) 3px 3px;
+  }
+}

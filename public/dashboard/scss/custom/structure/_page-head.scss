@@ -1,0 +1,43 @@
+//
+// Page-title
+//
+
+.page-title-box {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  box-shadow: $box-shadow;
+  margin: 0 -30px 23px -30px;
+  padding: 20px 30px 99px 30px;
+  color: $white;
+
+  .page-title {
+    line-height: 30px;
+
+    h4 {
+      font-weight: $font-weight-bold;
+      font-size: 18px !important;
+      color: $white;
+    }
+    .breadcrumb {
+      background-color: transparent;
+      padding: 4px 0;
+      margin-bottom: 0;
+      .breadcrumb-item > a {
+        color: $white;
+      }
+    }
+  }
+
+  .state-information {
+    .state-graph {
+      float: right;
+      margin-left: 40px;
+      text-align: center;
+      .info {
+        font-size: 12px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
